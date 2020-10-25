@@ -139,7 +139,7 @@
 }
 .bk_info{
     width: 100%;
-    height: 200px;
+    height: auto;
     background-image: url("../Images/imagem-fundo-info.jpg");
     background-size: cover;
 }
@@ -151,7 +151,7 @@
     font-family: 'Courier Prime', monospace;
     text-transform: uppercase;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .info_card h3{
@@ -218,7 +218,7 @@
     right: 20px;
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1200px){
     .topo nav{
         width: 80%;
     }
@@ -265,7 +265,7 @@
         position: unset;
     } 
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
 
     .btnMenu{
         display: block;
@@ -293,11 +293,80 @@
 
 }
 /* Resolução do 375 até 575 */
-@media screen and (max-width: 575px){
+@media screen and (max-width: 576px){
     .banner_text h1{
         font-size: 50px;
     }
     .banner_text p{
         font-size: 40px;
+    }
+    .sobre h2{
+        font-size: 50px;
+    }
+    .conteudo_sobre{
+        align-items: center;
+    }
+    .conteudo_sobre img {
+        width: 100%;
+        max-width: 500px;
+        margin-right: auto;
+    }
+    .texto_sobre h3{
+        margin-left: 35px;
+        font-size: 45px
+    }
+    .texto_sobre p{
+        width: 90%;
+        max-width: 560px;
+        margin-left: 35px;
+    }
+    .endereco {
+        height: auto;
+        padding: 3em 0;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .info_card p{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .text-endereco p{
+        font-size: 20px;
+    }    
+}
+/*Responsivo IPhone 6/7/8 Tela 414px */
+@media screen and (max-width: 414px){
+    .sobre h2{
+        font-size: 45px;
+    }
+    .conteudo_sobre img{
+        width: 100%;
+        max-width: 350px;
+    }
+    .texto_sobre{
+        max-width: 300px;
+    }
+    .texto_sobre h3{
+        margin-left: 0;
+    }
+    .texto_sobre p{
+        width: 300px;
+        margin-left: 0;
+    }
+    .endereco h2{
+        font-size: 45px;
+    }
+    .text-endereco{
+        width: 300px;
+    }
+    .text-endereco p{
+        font-size: 18px;
+    }
+    .text-endereco img{
+        width: 280px;
+    }
+    .rodape{
+        font-size: 14px
     }
 }
